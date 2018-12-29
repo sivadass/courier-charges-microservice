@@ -1,0 +1,7 @@
+{
+  "version": 2,
+  "name": "courier-charges",
+  "alias": "courier-charges",
+  "builds": [{ "src": "index.js", "use": "@now/node-server" }],
+  "routes": [{ "src": "/(.*)", "dest": "/index.js" }]
+}
