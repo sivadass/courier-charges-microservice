@@ -1,6 +1,5 @@
 var path = require("path");
 var express = require("express");
-var requestClient = require("request");
 var regionData = require("./utils");
 
 var port = process.env.BACKEND_PORT || 3002;
