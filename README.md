@@ -1,1 +1,3 @@
-# courier-charges-microservice
+# Indian Courier Charges Calculator Microservice
+
+More info, coming soon...
