@@ -1,0 +1,26 @@
+{
+  "name": "courier-charges-microservice",
+  "version": "0.0.1",
+  "description": "Indian Courier Charges Calculator Microservice",
+  "main": "index.js",
+  "scripts": {
+    "start": "ENVIRONMENT=dev nodemon index.js",
+    "build": "ENVIRONMENT=prod node index.js",
+    "deploy": "now",
+    "alias": "now alias"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sivadass/courier-charges-microservice.git"
+  },
+  "author": "Sivadass N",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sivadass/courier-charges-microservice/issues"
+  },
+  "homepage": "https://github.com/sivadass/courier-charges-microservice#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "nodemon": "^1.18.7"
+  }
+}
