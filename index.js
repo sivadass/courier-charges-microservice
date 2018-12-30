@@ -51,10 +51,14 @@ app.get("/check-pincode/:pincode", (req, res) => {
     return result;
   };
 
-  res.json({
-    pincode: pincode,
-    price: setPricing(zone)
-  });
+  if (pincode.length === 6) {
+    res.json({
+      pincode: pincode,
+      price: setPricing(zone)
+    });
+  } else {
+    res.status(500).send({ error: "PINCODE is not valid!" });
+  }
 });
 
 app.listen(port, () =>
