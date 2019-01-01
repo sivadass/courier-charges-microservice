@@ -62,5 +62,5 @@ app.get("/check-pincode/:pincode", (req, res) => {
 });
 
 app.listen(port, () =>
-  console.log(`Courier Charges Micro service listening on port ${port}!`)
+  console.log(`Courier Charges Micro service is running on port ${port}!`)
 );
