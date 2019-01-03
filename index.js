@@ -51,7 +51,12 @@ app.get("/check-pincode/:pincode", (req, res) => {
     return result;
   };
 
-  if (pincode.length === 6 && zone !== 0 && zone !== 9) {
+  if (
+    typeof pincode === "number" &&
+    pincode.length === 6 &&
+    zone !== 0 &&
+    zone !== 9
+  ) {
     res.json({
       pincode: pincode,
       price: setPricing(zone)
