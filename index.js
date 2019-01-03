@@ -57,7 +57,7 @@ app.get("/check-pincode/:pincode", (req, res) => {
       price: setPricing(zone)
     });
   } else {
-    res.status(504).send({ error: "PINCODE is not valid!" });
+    res.status(503).send({ error: "PINCODE is not valid!" });
   }
 });
 
